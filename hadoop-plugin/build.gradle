@@ -35,7 +35,6 @@ dependencies {
   compile project(":azkaban-client")
 
   compile 'org.antlr:antlr-runtime:3.5.2'
-  compile 'org.yaml:snakeyaml:1.18'
   compile('org.apache.hadoop:hadoop-auth:2.3.0') { transitive = false }
   compile('org.apache.hadoop:hadoop-common:2.3.0') { transitive = false }
   compile('org.apache.hadoop:hadoop-hdfs:2.3.0') { transitive = false }
@@ -49,6 +48,7 @@ dependencies {
   runtime 'jline:jline:1.0'
   runtime 'joda-time:joda-time:2.9.4'
   runtime 'org.mortbay.jetty:jetty-util:6.1.25'
+  runtime 'org.yaml:snakeyaml:1.18'
 }
 
 task groovydocJar(type: Jar, dependsOn: groovydoc) {
