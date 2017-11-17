@@ -49,6 +49,8 @@ dependencies {
   runtime 'joda-time:joda-time:2.9.4'
   runtime 'org.mortbay.jetty:jetty-util:6.1.25'
   runtime 'org.yaml:snakeyaml:1.18'
+
+  testCompile 'org.mockito:mockito-core:2.10.0'
 }
 
 task groovydocJar(type: Jar, dependsOn: groovydoc) {
