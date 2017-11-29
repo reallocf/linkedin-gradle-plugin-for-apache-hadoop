@@ -50,6 +50,7 @@ dependencies {
   runtime 'org.mortbay.jetty:jetty-util:6.1.25'
   runtime 'org.yaml:snakeyaml:1.18'
 
+  testCompile 'junit:junit:4.12'
   testCompile 'org.mockito:mockito-core:2.10.0'
 }
 
