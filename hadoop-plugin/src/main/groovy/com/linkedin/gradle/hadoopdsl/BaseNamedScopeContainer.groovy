@@ -646,6 +646,19 @@ abstract class BaseNamedScopeContainer implements NamedScopeContainer {
   }
 
   /**
+   * Creates the task to toggle between .flow/.project files generation and .job/.properties files
+   * generation.
+   *
+   * @param project The Gradle project
+   * @return The created task
+   */
+  @HadoopDslMethod
+  boolean generateYamlOutput(boolean flag) {
+    this.scope.bind("generate_yaml_output", flag);
+    return flag;
+  }
+
+  /**
    * DSL namespace method. Creates a Namespace in scope with the given name and configuration.
    * <p>
    * For ease of organizing the user's Gradle scripts, namespaces can be redeclared at the same
